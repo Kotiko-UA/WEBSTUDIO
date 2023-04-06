@@ -470,6 +470,11 @@ address {
     background-color: var(--title-dark);
 }
 
+.footer-container {
+    display: flex;
+
+}
+
 .social {
     margin-right: 120px;
 }
@@ -514,10 +519,6 @@ address {
 
 }
 
-.footer-container {
-    display: flex;
-
-}
 
 .soc-icon {
     margin-right: auto;

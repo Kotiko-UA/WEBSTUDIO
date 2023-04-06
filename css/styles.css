@@ -90,23 +90,26 @@ address {
     color: var(--pressed-state);
 }
 
-
+.container {
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
 
 /* ----------------------navigations------------------ */
+
+
 
 
 /*  /* ----------------------Hero----------------- */
 
 
-.hero {
-    width: 100%;
-}
+.hero {}
 
 .overley {
-    padding: 112px 54px;
-
-    min-width: 320px;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(46, 47, 66, 0.7);
@@ -116,20 +119,17 @@ address {
     background-size: cover;
 }
 
-/* .container {
-    display: block;
-    min-width: 320px;
-    padding-left: 54px;
-    padding-right: 54px;
-    margin: 0 auto;
-    outline: 2px solid red;
-} */
+.overley>.container {
+    padding-top: 54px;
+    padding-bottom: 54px;
 
+}
 
 
 
 
 .hero-title {
+
     margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
@@ -169,7 +169,7 @@ address {
 
 /* ------------------advantages----------------- */
 .adv {
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 
 .adv-item-bg {
@@ -201,7 +201,7 @@ address {
 
 /* ------------------out team------------------- */
 .team {
-    padding: 96px 82px;
+    padding: 96px 0;
     background-color: var(--light);
 }
 
@@ -217,6 +217,7 @@ address {
 
 }
 
+
 .team-item {
     background: #FFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -225,6 +226,11 @@ address {
 
 .team-item:not(:last-child) {
     margin-bottom: 72px;
+}
+
+.team-photo {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .team-box {
@@ -251,7 +257,8 @@ address {
 
 .soc-list {
     display: flex;
-    justify-content: space-around;
+    gap: 24px;
+    justify-content: center;
 }
 
 .soc-link {
@@ -272,4 +279,211 @@ address {
 .soc-link:hover,
 .soc-link:focus {
     background-color: var(--pressed-state);
+}
+
+/* ------------------customers--------------- */
+.customers {
+    padding: 96px 0;
+}
+
+.customers-title {
+    margin-bottom: 72px;
+
+    color: var(--title-dark);
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.customers-list {
+    display: flex;
+    gap: 72px 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.customers-item {}
+
+.customers-link {
+    padding: 16px 40px;
+    width: 190px;
+    transition: border var(--tranform), border-radius var(--tranform);
+    display: block;
+    text-align: center;
+    border: 1px solid var(--subtle-text);
+    border-radius: 4px;
+
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--pressed-state);
+    border-radius: 4px;
+
+}
+
+.customers-icon {
+    transition: fill var(--tranform);
+    fill: var(--subtle-text);
+}
+
+.customers-link:hover .customers-icon {
+    fill: var(--pressed-state);
+}
+
+
+.customers-link:focus .customers-icon {
+    fill: var(--pressed-state);
+}
+
+/* -------------------footer------------- */
+.footer {
+    padding: 96px 0;
+    background-color: var(--title-dark);
+}
+
+.social {
+    margin-bottom: 72px;
+}
+
+.footer-logo {
+    margin-bottom: 16px;
+    display: block;
+
+    font-family: "Raleway", sans-serif;
+    color: var(--primary-brand);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer-logo-studio {
+    color: var(--light);
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.link:hover .footer-logo-studio {
+    color: var(--pressed-state);
+}
+
+.link:focus .footer-logo-studio {
+    color: var(--pressed-state);
+}
+
+.footer-text {
+
+    color: var(--accent);
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+.footer-soc-title {
+    margin-bottom: 16px;
+
+    color: #FFF;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+}
+
+.footer .soc-list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 72px;
+}
+
+.footer .soc-link {
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.footer .soc-link:hover,
+.footer .soc-link:focus {
+    background-color: var(--success);
+}
+
+.footer-soc-icon {
+    fill: var(--light);
+}
+
+.footer-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.footer-form-label {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.footer-form-input {
+    width: 100%;
+    height: 40px;
+    background-color: inherit;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFF;
+
+}
+
+.footer-form-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFF;
+}
+
+.footer-form-button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    transition: background-color var(--tranform);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFF;
+    background-color: var(--primary-brand);
+    border: 1px;
+    border-color: transparent;
+    border-radius: 4px;
+
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: var(--pressed-state);
+}
+
+.footer-button-icon {
+    fill: #FFF;
 }
