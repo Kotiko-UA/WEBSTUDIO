@@ -24,97 +24,104 @@
         <a class="logo link" href="./index.html"
           >Web<span class="logo-studio link">Studio</span></a
         >
-        <button class="header-button" type="button">
+        <button class="header-button-menu" type="button" data-menu-open>
           <svg class="header-button-svg" width="32" height="22">
             <use href="./images/icons.svg#icon-hamburger"></use>
           </svg>
         </button>
 
-        <div class="container header-thumb">
-          <nav class="nav">
-            <ul class="nav-list list">
-              <li class="nav-item">
-                <a class="nav-item-link link active" href="./index.html"
-                  >Studio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-item-link link" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-item-link link" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="header-thumb container is-hidden" data-menu>
+          <button type="button" class="header-button-close" data-menu-close>
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <div class="nav-wrap">
+            <nav class="nav">
+              <ul class="nav-list list">
+                <li class="nav-item">
+                  <a class="nav-item-link link active" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-link link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
 
-          <address class="adress">
-            <ul class="adress-list list">
-              <li class="adress-item">
-                <a
-                  class="adress-link mail link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="adress-item">
-                <a class="adress-link fone link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-            <ul class="soc-list list">
-              <li class="soc-item">
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="soc-link link"
-                >
-                  <svg class="footer-soc-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-instagram-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="soc-item">
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="soc-link link"
-                >
-                  <svg class="footer-soc-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="soc-item">
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="soc-link link"
-                >
-                  <svg class="footer-soc-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-facebook-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="soc-item">
-                <a
-                  href="https://linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="soc-link link"
-                >
-                  <svg class="footer-soc-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </address>
+            <address class="adress">
+              <ul class="adress-list list">
+                <li class="adress-item">
+                  <a
+                    class="adress-link mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adress-item">
+                  <a class="adress-link fone link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+              <ul class="soc-list list">
+                <li class="soc-item">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="soc-link link"
+                  >
+                    <svg class="footer-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-item">
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="soc-link link"
+                  >
+                    <svg class="footer-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-item">
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="soc-link link"
+                  >
+                    <svg class="footer-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-item">
+                  <a
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="soc-link link"
+                  >
+                    <svg class="footer-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
       </div>
     </header>
@@ -713,6 +720,7 @@
         </form>
       </div>
     </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
