@@ -1,0 +1,43 @@
+@media screen and (min-width:428px) {
+    .container {
+        width: 428px;
+    }
+
+    .overley>.container {
+        padding: 112px 54px;
+    }
+
+    .team-list {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .team-item {
+        margin-right: auto;
+        margin-left: auto;
+        width: 264px;
+    }
+
+    .footer-text {
+        margin-bottom: 72px;
+    }
+
+    .social {
+        padding: 0 80px;
+    }
+
+    .footer .soc-list {
+        justify-content: center;
+    }
+
+    .modal {
+        width: 392px;
+        height: 586px;
+    }
+
+    .modal-button {
+        margin: 24px auto;
+    }
+}
