@@ -246,7 +246,7 @@
         padding: 0 108px;
         display: flex;
         gap: 24px;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     .footer-logo {
@@ -260,7 +260,7 @@
     .footer-form-wrap {
         display: flex;
         gap: 24px;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
 
     }
@@ -274,8 +274,9 @@
 
     }
 
-    .footer-form-label {
-        flex-grow: 1;
+
+    .footer-form-input {
+        width: 265px;
     }
 
     .footer-form-button {
