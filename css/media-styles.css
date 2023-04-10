@@ -388,10 +388,6 @@
         margin-bottom: 0;
     }
 
-    .footer>.container {
-        padding-left: 108px;
-        padding-right: 164px;
-    }
 
 
     .social {
@@ -436,6 +432,14 @@
     .modal {
         width: 408px;
         height: 586px;
+    }
+}
+
+/* ---------------------MIN 768----MAX 1157------------ */
+@media screen and (min-width:768px) and (max-width: 1157px) {
+    .footer>.container {
+        padding-left: 108px;
+        padding-right: 164px;
     }
 }
 
