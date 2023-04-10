@@ -177,10 +177,7 @@
         margin-left: auto;
     }
 
-    .footer>.container {
-        padding-left: 108px;
-        padding-right: 164px;
-    }
+
 
     .social {
         gap: 24px;
@@ -389,6 +386,11 @@
 
     .social-text-wrap {
         margin-bottom: 0;
+    }
+
+    .footer>.container {
+        padding-left: 108px;
+        padding-right: 164px;
     }
 
 
