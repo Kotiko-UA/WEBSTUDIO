@@ -100,7 +100,18 @@ address {
     padding-right: 16px;
     width: 100%;
     margin: 0 auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
+}
+
+
+
+
+
+/* -------------------MODAL------------------------ */
+
+
+.modal-close-icon {
+    display: block;
 }
 
 /* ----------------------navigations------------------ */
@@ -125,142 +136,11 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
-
 }
 
 .logo-studio {
     color: var(--title-dark);
 
-}
-
-@media screen and (max-width:767px) {
-    .header {
-        padding: 24px 0;
-    }
-
-    .header-button-menu {
-
-        display: block;
-        margin-left: auto;
-        border: none;
-        padding: 0;
-        background-color: #FFF;
-
-    }
-
-    .header-button-svg {
-        display: block;
-        fill: var(--title-dark);
-        stroke: var(--title-dark);
-    }
-
-    .header-thumb {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        transform: translatex(0);
-        opacity: 1;
-        transition: transform var(--tranform), opacity var(--tranform), visibility var(--tranform);
-
-        padding-top: 24px;
-        padding-bottom: 40px;
-        padding-left: 40px;
-        padding-right: 24px;
-
-        background-color: #fff;
-    }
-
-    .header-thumb.is-hidden {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-        transform: translatex(100%);
-        transition: transform var(--tranform), opacity var(--tranform), visibility var(--tranform);
-    }
-
-    .header-button-close {
-        display: block;
-        margin-left: auto;
-        width: 24px;
-        height: 24px;
-        padding: 8px;
-        margin-bottom: 32px;
-        background-color: rgba(232, 234, 252, 0.1);
-
-        border: 1px solid #2E2F42;
-        border-radius: 50%;
-    }
-
-    .nav-item:last-child>.nav-item-link {
-        color: var(--pressed-state);
-    }
-
-    .nav-item:not(:last-child) {
-        margin-bottom: 40px;
-    }
-
-    .nav-item-link {
-        display: block;
-
-        color: var(--title-dark);
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-    }
-
-    .adress-list {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 40px 0;
-        margin-bottom: 48px;
-    }
-
-    .adress-link.fone {
-        display: block;
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-    }
-
-    .adress-link.mail {
-        display: block;
-        font-family: 'Roboto';
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: var(--text);
-
-    }
-
-    .team-item:not(:last-child) {
-        margin-bottom: 72px;
-    }
-
-    .team-list {
-        margin-right: auto;
-        display: block;
-        width: 264px;
-        margin-left: auto;
-    }
-
-    .social {
-        padding: 0 80px;
-    }
-}
-
-
-
-
-
-.modal-close-icon {
-    display: block;
 }
 
 .nav-wrap {
@@ -279,7 +159,7 @@ address {
 
 
 
-.adress {
+.address {
     display: block;
 }
 
@@ -290,7 +170,6 @@ address {
 /*  /* ----------------------Hero----------------- */
 
 
-.hero {}
 
 .overley {
     margin-left: auto;
@@ -381,9 +260,7 @@ address {
     line-height: 1.5;
 }
 
-.adv-item:not(:last-child) {
-    margin-bottom: 72px;
-}
+
 
 /* ---------------our works--------------- */
 .ourwork {
@@ -448,7 +325,7 @@ address {
 .soc-list {
     display: flex;
     gap: 24px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .soc-link {
@@ -534,9 +411,6 @@ address {
     background-color: var(--title-dark);
 }
 
-.social {
-    margin-bottom: 72px;
-}
 
 .footer-logo {
     margin-bottom: 16px;
