@@ -14,11 +14,7 @@
 
 /* -------------------MAX 427------------------- */
 
-@media screen and (max-width:427px) {
-    .adv-item:not(:last-child) {
-        margin-bottom: 72px;
-    }
-}
+@media screen and (max-width:427px) {}
 
 /* -------------------MIN 428-------------------- */
 @media screen and (min-width:428px) {
@@ -164,6 +160,10 @@
         letter-spacing: 0.02em;
         color: var(--text);
 
+    }
+
+    .adv-item:not(:last-child) {
+        margin-bottom: 72px;
     }
 
     .team-item:not(:last-child) {
