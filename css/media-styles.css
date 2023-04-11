@@ -376,6 +376,10 @@
         gap: 72px 24px;
     }
 
+    .customers-link {
+        width: 168px;
+    }
+
     .social-text-wrap {
         max-width: 264px;
     }
@@ -437,9 +441,10 @@
 
 /* ---------------------MIN 768----MAX 1157------------ */
 @media screen and (min-width:768px) and (max-width: 1157px) {
+
     .footer>.container {
         padding-left: 108px;
-        padding-right: 164px;
+        padding-right: 108px;
     }
 }
 
@@ -539,9 +544,7 @@
         gap: 24px;
     }
 
-    .customers-link {
-        width: 168px;
-    }
+
 
     .footer-container {
         display: flex;
