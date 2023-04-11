@@ -798,8 +798,8 @@ address {
 
 /* -----------------PORTFOLIO--------------------- */
 .portfolio {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 
 }
 
