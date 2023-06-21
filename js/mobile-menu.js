@@ -5,10 +5,7 @@
     menu: document.querySelector('[data-menu]'),
   };
 
-  refs.openMenuBtn.forEach((el) => {
-    el.addEventListener('click', toggleMenu);
-  });
-
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
